@@ -14,11 +14,9 @@ class Flight ():
 F = Flight(3)
 people = ["ahmed " , "salah" , "mahmoud" , " wael "]
 for i in people : 
-    added =  F.add_passengers(i)
-    if added :
+    if F.add_passengers(i) :
         print(F"Added {i} to the flight  ")
     else : 
         print(F"No available seats for {i}")
-
 
                     
